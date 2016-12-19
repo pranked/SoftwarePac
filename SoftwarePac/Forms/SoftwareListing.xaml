@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="SoftwarePac.GUI.Forms.SoftwareListing"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="500">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Theme/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Top" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <TextBox x:Name="textBox" Height="23" TextWrapping="Wrap" Text="{Binding testing, Mode=OneWay}" MinWidth="200" MaxWidth="400" Margin="0,0,5,0"/>
+            <Button x:Name="button" Content="Button" Width="75"/>
+        </WrapPanel>
+        <DataGrid Name="dgSimple" Style="{StaticResource DataGrid}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AutoGenerateColumns="False" ItemsSource="{Binding Software, Mode=OneWay}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" MinWidth="120" Width="Auto" Binding="{Binding FriendlyName}" />
+                <DataGridTextColumn Header="Version" Binding="{Binding X64Only}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</UserControl>

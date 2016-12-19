@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:SoftwarePac">
+
+    <Color x:Key="LightGray">#F9F9F9</Color>
+    <SolidColorBrush x:Key="BrushLightGray" Color="{StaticResource LightGray}" />
+    
+    <Color x:Key="Gray">#E8ECED</Color>
+    <SolidColorBrush x:Key="BrushGray" Color="{StaticResource Gray}" />
+    
+    <Color x:Key="Seperator">#dee5e7</Color>
+    <SolidColorBrush x:Key="BrushSeperator" Color="{StaticResource Seperator}" />
+
+    <Color x:Key="DarkGray">#D9DFE1</Color>
+    <SolidColorBrush x:Key="BrushDarkGray" Color="{StaticResource DarkGray}" />
+
+    <Color x:Key="Darkest">#28323B</Color>
+    <SolidColorBrush x:Key="BrushDarkest" Color="{StaticResource Darkest}" />
+    
+    <Color x:Key="Blue">#23b7e5</Color>
+    <SolidColorBrush x:Key="BrushBlue" Color="{StaticResource Blue}" />
+    
+    <Color x:Key="Purple">#7266ba</Color>
+    <SolidColorBrush x:Key="BrushPurple" Color="{StaticResource Purple}" />
+    
+    <Color x:Key="Yellow">#fad733</Color>
+    <SolidColorBrush x:Key="BrushYellow" Color="{StaticResource Yellow}" />
+    
+    <Color x:Key="Green">#27c24c</Color>
+    <SolidColorBrush x:Key="BrushGreen" Color="{StaticResource Green}" />
+    
+    <Color x:Key="Red">#f05050</Color>
+    <SolidColorBrush x:Key="BrushRed" Color="{StaticResource Red}" />
+</ResourceDictionary>

@@ -1,0 +1,16 @@
+﻿<Application x:Class="SoftwarePac.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:model="clr-namespace:SoftwarePac.GUI.Model"
+             StartupUri="../Forms/MainWindow.xaml">
+    <Application.Resources>
+        <model:ViewModel x:Key="ViewModel"></model:ViewModel>
+    </Application.Resources>
+</Application>
+
+
+
+
+
+
+
